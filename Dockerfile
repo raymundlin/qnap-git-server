@@ -1,4 +1,4 @@
-FROM arm32v7/ubuntu:14.04
+FROM x86_64/ubuntu:18.04
 
 RUN apt-get update \
  && apt-get install -y openssh-server bash git vim lighttpd libcgi-pm-perl busybox-syslogd \
@@ -12,6 +12,6 @@ RUN apt-get update \
 
 ADD start.sh /start.sh
 
-EXPOSE 22 1234
+EXPOSE 22 2022
 
 CMD ["/start.sh"]
