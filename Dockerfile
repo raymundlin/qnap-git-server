@@ -1,4 +1,4 @@
-FROM x86_64/ubuntu:20.04
+FROM ubuntu:18.04
 
 RUN apt-get update \
  && apt-get install -y openssh-server bash git vim lighttpd libcgi-pm-perl busybox-syslogd \
